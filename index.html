@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Threat Monitor</title>
+    <style>
+        body {
+            margin: 0;
+            background: #080f1c;
+            color: #e2e8f0;
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 { letter-spacing: 2px; }
+
+        .status { color: #5eead4; }
+
+        canvas {
+            width: 100%;
+            background: #101c2d;
+            border: 1px solid #334155;
+            border-radius: 12px;
+        }
+
+        #events {
+            font-family: monospace;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>GLOBAL THREAT MONITOR</h1>
+        <p class="status">● SIMULATION MODE</p>
+
+        <h2>Network Activity</h2>
+        <canvas id="map" width="1000" height="500"></canvas>
+
+        <h2>Events: <span id="count">0</span></h2>
+        <div id="events"></div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
